@@ -2,11 +2,13 @@ header.site-header
 	.sh-top
 		.container.container--sh-top
 			.sh-top-left
-				a.sh-calendar(href="")
+				a.sh-calendar.sh-calendar--in-header-top(href="")
 					include ../../img/header/calendar.svg
 					span Спортивный календарь
-
-				.sh-articles
+				a.sh-articles__label.sh-articles__label--link-in-mobile-menu(href="")
+						include ../../img/header/sh-articles.svg
+						span Статьи
+				.sh-articles.sh-articles--in-header-top
 					.sh-articles__label
 						include ../../img/header/sh-articles.svg
 						span Статьи
@@ -95,8 +97,9 @@ header.site-header
 
 	.sh-main
 		.container.container--sh-main
-			a.sh-logo(href="")
-				img(src="img/header/site-logo.svg", alt="")
+			.sh-logo-wrap
+				a.sh-logo(href="")
+					img(src="img/header/site-logo.svg", alt="")
 			nav.sh-menu-wrap
 				ul.sh-menu
 					li.sh-menu-item.sh-menu-item--has-sub
@@ -104,9 +107,10 @@ header.site-header
 							.sh-menu-link__pic
 								include ../../img/header/a-fb.svg
 							span Футбол
-						ul.sh-sub-menu
+						.sh-mobile-open-submenu-btn
+						ul.sh-sub-menu.sh-sub-menu--active
 							li.sh-menu-sub-item
-								a.sh-menu-sub-link(href="") Champions League Bundesliga
+								a.sh-menu-sub-link(href="") 1hampions League Bundesliga
 							li.sh-menu-sub-item
 								a.sh-menu-sub-link(href="") Europe League
 							li.sh-menu-sub-item
@@ -116,9 +120,10 @@ header.site-header
 							.sh-menu-link__pic
 								include ../../img/header/a-te.svg
 							span Теннис
+						.sh-mobile-open-submenu-btn
 						ul.sh-sub-menu
 							li.sh-menu-sub-item
-								a.sh-menu-sub-link(href="") Champions League Bundesliga
+								a.sh-menu-sub-link(href="") 2hampions League Bundesliga
 							li.sh-menu-sub-item
 								a.sh-menu-sub-link(href="") Europe League
 							li.sh-menu-sub-item
@@ -128,9 +133,10 @@ header.site-header
 							.sh-menu-link__pic
 								include ../../img/header/a-hk.svg
 							span Хоккей
+						.sh-mobile-open-submenu-btn
 						ul.sh-sub-menu
 							li.sh-menu-sub-item
-								a.sh-menu-sub-link(href="") Champions League Bundesliga
+								a.sh-menu-sub-link(href="") 3hampions League Bundesliga
 							li.sh-menu-sub-item
 								a.sh-menu-sub-link(href="") Europe League
 							li.sh-menu-sub-item
@@ -140,9 +146,10 @@ header.site-header
 							.sh-menu-link__pic
 								include ../../img/header/a-vb.svg
 							span Волейбол
+						.sh-mobile-open-submenu-btn
 						ul.sh-sub-menu
 							li.sh-menu-sub-item
-								a.sh-menu-sub-link(href="") Champions League Bundesliga
+								a.sh-menu-sub-link(href="") 4hampions League Bundesliga
 							li.sh-menu-sub-item
 								a.sh-menu-sub-link(href="") Europe League
 							li.sh-menu-sub-item
@@ -152,9 +159,10 @@ header.site-header
 							.sh-menu-link__pic
 								include ../../img/header/a-bb.svg
 							span Баскетбол
+						.sh-mobile-open-submenu-btn
 						ul.sh-sub-menu
 							li.sh-menu-sub-item
-								a.sh-menu-sub-link(href="") Champions League Bundesliga
+								a.sh-menu-sub-link(href="") 5hampions League Bundesliga
 							li.sh-menu-sub-item
 								a.sh-menu-sub-link(href="") Europe League
 							li.sh-menu-sub-item
@@ -164,14 +172,20 @@ header.site-header
 							.sh-menu-link__pic
 								include ../../img/header/a-other.svg
 							span Другой спорт
+						.sh-mobile-open-submenu-btn
 						ul.sh-sub-menu
 							li.sh-menu-sub-item
-								a.sh-menu-sub-link(href="") Champions League Bundesliga
+								a.sh-menu-sub-link(href="") 6hampions League Bundesliga
 							li.sh-menu-sub-item
 								a.sh-menu-sub-link(href="") Europe League
 							li.sh-menu-sub-item
 								a.sh-menu-sub-link(href="") Indian Football
+					.sh-menu-close-sub-btn
+						span Назад
 
+			a.sh-calendar.sh-calendar--in-main(href="")
+					include ../../img/header/calendar.svg
+					span Спортивный календарь
 			.sh-burger
 				span
 			a.sh-search(href="")
