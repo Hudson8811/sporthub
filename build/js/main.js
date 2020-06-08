@@ -91,11 +91,11 @@ $(document).ready(function () {
 
 
 	});
-
+/*
 	$('.sh-articles__label').on('click', function () {
 		$('.sh-articles').toggleClass('sh-articles--active');
 	})
-
+*/
 
 });
 $(document).ready(function () {
