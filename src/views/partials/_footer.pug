@@ -1,2 +1,93 @@
 footer.site-footer
-	
+	.footer-top-part
+		.container.container--foo-top
+			.foo-top-flex
+				.foo-top-flex__col
+					.foo-top-accordeon
+						.foo-top-accordeon__label.js-foo-top-accordeon__label Популярное
+						.foo-top-accordeon__content
+							a.footer-link(href="")
+								span.footer-link__counter 152
+								span.footer-link__name Футбол
+							a.footer-link(href="")
+								span.footer-link__counter 52
+								span.footer-link__name Теннис
+							a.footer-link(href="")
+								span.footer-link__counter 356
+								span.footer-link__name Хоккей
+							a.footer-link(href="")
+								span.footer-link__counter 12
+								span.footer-link__name Гандбол
+							a.footer-link(href="")
+								span.footer-link__counter 102
+								span.footer-link__name Баскетбол
+							a.footer-link(href="")
+								span.footer-link__counter 30
+								span.footer-link__name Волейбол
+
+				.foo-top-flex__col
+					.foo-top-accordeon
+						.foo-top-accordeon__label.js-foo-top-accordeon__label Новинки
+						.foo-top-accordeon__content
+							a.footer-link(href="")
+								span.footer-link__counter 15
+								span.footer-link__name Сквош
+							a.footer-link(href="")
+								span.footer-link__counter 255
+								span.footer-link__name Настольный теннис
+							a.footer-link(href="")
+								span.footer-link__counter 11
+								span.footer-link__name Бадминтон
+							a.footer-link(href="")
+								span.footer-link__counter 144
+								span.footer-link__name Гольф
+							a.footer-link(href="")
+								span.footer-link__counter 50
+								span.footer-link__name Cнукер
+							a.footer-link(href="")
+								span.footer-link__counter 1
+								span.footer-link__name Автоспорт
+
+				.foo-top-flex__col
+					.foo-top-accordeon
+						.foo-top-accordeon__label.js-foo-top-accordeon__label Информация
+						.foo-top-accordeon__content
+							a.footer-link(href="")
+								span.footer-link__name Блог
+							a.footer-link(href="")
+								span.footer-link__name Спортивный календарь
+							a.footer-link(href="")
+								span.footer-link__name Политика конфиденциальности
+							a.footer-link(href="")
+								span.footer-link__name Контакты
+							a.footer-link(href="")
+								span.footer-link__name О нас
+
+				.foo-top-flex__col
+					form.foo-subscribe
+						.foo-subscribe__title Подпишитесь на новости
+						.foo-subscribe__description Подпишитесь на рассылку и будьте в курсе самых свежих новостей в&nbsp;мире спорта
+						.foo-subscribe-input-block-wrap
+							.foo-subscribe-input-block
+								input.foo-sb-ib-input(type="text", name="" placeholder="Электронная почта")
+								button.foo-sb-ib-button(type="submit")
+
+
+
+	.footer-bottom-part
+		.container.container--foo-bottom
+			.footer-logo-wrap
+				a.footer-logo(href="")
+					img(src="img/footer/footer-logo.svg", alt="")
+			.footer-copyright © 2020 Спортивный портал — SportHub. Все материалы на данном сайте взяты из открытых&nbsp;источников - имеют обратную ссылку на материал в интернете
+			.footer-socials-wrap
+				.sh-socials.sh-socials--in-footer
+					a.sh-social.sh-social--type-fill(href="" target="_blank")
+						.sh-social-bg(style="background-color: #4E6297")
+						include ../../img/header/soc-fb.svg
+					a.sh-social.sh-social--type-fill(href="" target="_blank")
+						.sh-social-bg(style="background-color: #55ACE3")
+						include ../../img/header/soc-tw.svg
+					a.sh-social.sh-social--type-stroke(href="" target="_blank")
+						.sh-social-bg(style="background-image: rgb(238,160,84); background-image: -moz-linear-gradient(200deg, rgba(238,160,84,1) 0%, rgba(214,71,99,1) 50.52%, rgba(182,42,153,1) 100%); background-image: -webkit-linear-gradient(200deg, rgba(238,160,84,1) 0%, rgba(214,71,99,1) 50.52%, rgba(182,42,153,1) 100%); background-image: linear-gradient(200deg, rgba(238,160,84,1) 0%, rgba(214,71,99,1) 50.52%, rgba(182,42,153,1) 100%);")
+						include ../../img/header/soc-inst.svg
