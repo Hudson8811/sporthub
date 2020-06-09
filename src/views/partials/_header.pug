@@ -2,11 +2,13 @@ header.site-header
 	.sh-top
 		.container.container--sh-top
 			.sh-top-left
-				a.sh-calendar(href="")
+				a.sh-calendar.sh-calendar--in-header-top(href="")
 					include ../../img/header/calendar.svg
 					span Спортивный календарь
-
-				.sh-articles
+				a.sh-articles__label.sh-articles__label--link-in-mobile-menu(href="")
+						include ../../img/header/sh-articles.svg
+						span Статьи
+				.sh-articles.sh-articles--in-header-top
 					.sh-articles__label
 						include ../../img/header/sh-articles.svg
 						span Статьи
@@ -64,7 +66,7 @@ header.site-header
 								a(href="") Indian Football
 
 			.sh-top-right
-				.sh-socials
+				.sh-socials.sh-socials--in-header
 					a.sh-social.sh-social--type-fill(href="" target="_blank")
 						.sh-social-bg(style="background-color: #4E6297")
 						include ../../img/header/soc-fb.svg
@@ -77,21 +79,114 @@ header.site-header
 
 
 
-				.sh-language-switcher
+				.sh-language-switcher.sh-language-switcher--in-header
 					.sh-language-switcher__active
 						.sh-language-switcher__lang
 							img(src="img/header/lang-ru.svg", alt="")
 							span  Русский
 						include ../../img/header/accordeon-arrow-white.svg
 					.sh-language-switcher__other
-						a.sh-language-switcher__lang(href="")
+						a.sh-language-switcher__lang.sh-language-switcher__lang--non-choosed(href="")
 							img(src="img/header/lang-en.svg", alt="")
 							span Английский
 
-						a.sh-language-switcher__lang(href="")
+						a.sh-language-switcher__lang.sh-language-switcher__lang--non-choosed(href="")
 							img(src="img/header/lang-by.svg", alt="")
 							span Белорусский
 
+
 	.sh-main
-		.sh-burger
-			span
+		.container.container--sh-main
+			.sh-logo-wrap
+				a.sh-logo(href="")
+					img(src="img/header/site-logo.svg", alt="")
+			nav.sh-menu-wrap
+				ul.sh-menu
+					li.sh-menu-item.sh-menu-item--has-sub
+						a.sh-menu-link(href="")
+							.sh-menu-link__pic
+								include ../../img/header/a-fb.svg
+							span Футбол
+						.sh-mobile-open-submenu-btn
+						ul.sh-sub-menu.sh-sub-menu--active
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") 1hampions League Bundesliga
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Europe League
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Indian Football
+					li.sh-menu-item.sh-menu-item--has-sub
+						a.sh-menu-link(href="")
+							.sh-menu-link__pic
+								include ../../img/header/a-te.svg
+							span Теннис
+						.sh-mobile-open-submenu-btn
+						ul.sh-sub-menu
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") 2hampions League Bundesliga
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Europe League
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Indian Football
+					li.sh-menu-item.sh-menu-item--has-sub
+						a.sh-menu-link(href="")
+							.sh-menu-link__pic
+								include ../../img/header/a-hk.svg
+							span Хоккей
+						.sh-mobile-open-submenu-btn
+						ul.sh-sub-menu
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") 3hampions League Bundesliga
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Europe League
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Indian Football
+					li.sh-menu-item.sh-menu-item--has-sub
+						a.sh-menu-link(href="")
+							.sh-menu-link__pic
+								include ../../img/header/a-vb.svg
+							span Волейбол
+						.sh-mobile-open-submenu-btn
+						ul.sh-sub-menu
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") 4hampions League Bundesliga
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Europe League
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Indian Football
+					li.sh-menu-item.sh-menu-item--has-sub
+						a.sh-menu-link(href="")
+							.sh-menu-link__pic
+								include ../../img/header/a-bb.svg
+							span Баскетбол
+						.sh-mobile-open-submenu-btn
+						ul.sh-sub-menu
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") 5hampions League Bundesliga
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Europe League
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Indian Football
+					li.sh-menu-item.sh-menu-item--has-sub
+						a.sh-menu-link(href="")
+							.sh-menu-link__pic
+								include ../../img/header/a-other.svg
+							span Другой спорт
+						.sh-mobile-open-submenu-btn
+						ul.sh-sub-menu
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") 6hampions League Bundesliga
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Europe League
+							li.sh-menu-sub-item
+								a.sh-menu-sub-link(href="") Indian Football
+					.sh-menu-close-sub-btn
+						span Назад
+
+			a.sh-calendar.sh-calendar--in-main(href="")
+					include ../../img/header/calendar.svg
+					span Спортивный календарь
+			.sh-burger
+				span
+			a.sh-search(href="")
+				include ../../img/header/search-lupe.svg

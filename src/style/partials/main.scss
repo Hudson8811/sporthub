@@ -34,9 +34,11 @@ select, option, button, input, textarea{
 .container {
 	box-sizing: border-box;
 	width: 1216px;
-	max-width: calc(100% - 20px);
+	max-width: 95%;
+	max-width: calc(100% - 60px);
 	margin: 0 auto;
 }
+
 
 #jGrowl {
 	z-index: 999999;
@@ -49,4 +51,5 @@ select, option, button, input, textarea{
 .hide {
 	display: none;
 }
+
 
