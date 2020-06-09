@@ -40,6 +40,10 @@
 		color: $dark-blue;
 		padding: 6px 20px;
 
+		&:hover {
+			text-decoration: underline;
+		}
+
 		svg {
 			width: 6px;
 			height: 12px;
@@ -81,7 +85,9 @@
 			display: none;
 
 			@media (min-width: $dMin) {
+				width: calc(100% - 24px);
 				display: block;
+				margin-left: 10px;
 			}
 		}
 	}
@@ -164,15 +170,16 @@
 		font-weight: bold;
 		text-align: center;
 		cursor: pointer;
+		transition: background-color 0.3s ease, color 0.3s ease;
+
+		&:hover {
+			background-color: $dark-blue;
+			color: $white;
+		}
 
 		@media (min-width: $tMin) {
 			width: calc(100% - 24px);
 			margin-left: 10px;
-		}
-
-		@media (min-width: $dMin) {
-			width: calc(100% - 12px);
-			margin-left: 0;
 		}
 	}
 
@@ -183,10 +190,6 @@
 
 		@media (min-width: $tMin) {
 			margin-left: 10px;
-		}
-
-		@media (min-width: $dMin) {
-			margin-left: 0;
 		}
 	}
 }
