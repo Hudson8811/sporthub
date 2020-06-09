@@ -34,8 +34,7 @@ select, option, button, input, textarea{
 .container {
 	box-sizing: border-box;
 	width: 1216px;
-	max-width: 95%;
-	max-width: calc(100% - 30px);
+	max-width: calc(100% - 20px);
 	margin: 0 auto;
 }
 
