@@ -1,3 +1,7 @@
+.site-header{
+    position: relative;
+    z-index: 49;
+}
 
 .sh-top {
 	background: #F8F8F8;
@@ -94,7 +98,6 @@
 		.sh-articles-main {
 			pointer-events: all;
 			opacity: 1;
-			z-index: 51;
 		}
 
 		.sh-articles__label {
@@ -112,7 +115,7 @@
 	pointer-events: none;
 	opacity: 0;
 	background: #EEF7FF;
-	z-index: 2;
+    z-index: 51;
 }
 
 .sh-articles-controls {

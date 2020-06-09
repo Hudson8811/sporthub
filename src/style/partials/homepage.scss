@@ -1,0 +1,267 @@
+.top-section-with-slider {
+    padding: 40px 0;
+    background: #EEF7FF;
+}
+
+.container-tsws {
+    padding: 0 17px;
+}
+
+.tsws-slider {
+    .slick-track {
+        display: flex !important;
+    }
+
+    .slick-slide {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        >div {
+            flex-grow: 1;
+        }
+    }
+}
+
+.tsws-slide {
+    height: 100%;
+    padding: 0 10px;
+}
+
+.tsws-match-card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 275px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    //  margin: 10px;
+    background: #FFFFFF;
+}
+
+.tsws-slide-category {
+    display: flex;
+    align-items: center;
+
+    &__pic {
+        width: 14px;
+        min-width: 14px;
+        height: 14px;
+        margin-right: 10px;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+    }
+}
+
+.tsws-slide-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &__occurred {
+        display: flex;
+        align-items: center;
+        color: #B6B6B6;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+
+        &--live {
+            color: #DE2A2D;
+
+            &::before {
+                display: block;
+                width: 6px;
+                height: 6px;
+                margin-right: 5px;
+                content: '';
+                border-radius: 50%;
+                background: #DE2A2D;
+            }
+        }
+    }
+
+    &__date {
+        color: #B6B6B6;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+}
+
+.tsws-slide-teams {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 20px;
+
+    &__team {
+        display: flex;
+        align-items: center;
+        max-width: calc(50%);
+
+        &--left {}
+
+        &--right {
+            min-width: calc(50% - 10px);
+        }
+
+        span {
+            display: block;
+            word-break: break-all;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+        }
+    }
+
+    &__delimiter {
+        flex-grow: 1;
+        padding: 0 10px;
+
+        &::before {
+            display: block;
+            width: 100%;
+            height: 2px;
+            content: '';
+            border-radius: 10px;
+            background: #EEF7FF;
+        }
+    }
+
+    span {}
+}
+
+.tsws-slide-teams__pic {
+    margin-right: 5px;
+
+    img {
+        display: block;
+        width: auto;
+        height: 24px;
+        object-fit: contain;
+        object-position: center center;
+    }
+}
+
+.tsws-slide-score {
+    margin-top: 20px;
+    text-align: center;
+    color: #B6B6B6;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+
+    &--live {
+        color: #0E3770;
+    }
+
+    span {}
+}
+
+.tsws-slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    margin-top: -24px;
+    cursor: pointer;
+    transition-duration: .2s;
+
+    svg {
+        width: 9px;
+        height: 19px;
+
+        path {}
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.tsws-slick-prev {
+    left: -36px;
+}
+
+.tsws-slick-next {
+    right: -36px;
+}
+
+///////Бегущая строка
+
+
+.main-marquee-section {
+    width: 100%;
+    background: #F8F8F8;
+}
+
+.main-marquee-flex {
+    display: flex;
+    align-items: center;
+    height: 58px;
+
+    &__live {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 80px;
+        height: 100%;
+        padding: 0 20px;
+        color: #FFFFFF;
+        background: #DE2A2D;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+
+        &::before {
+            display: block;
+            width: 6px;
+            height: 6px;
+            margin-right: 5px;
+            content: '';
+            border-radius: 50%;
+            background: #FFFFFF;
+        }
+    }
+}
+
+.main-marquee-wrap {
+    box-sizing: border-box;
+    width: calc(100% - 80px);
+}
+
+.main-marquee {
+    overflow: hidden;
+    max-width: 100%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.top-section-with-slider{
+    position: relative;
+    z-index: 1;
+}

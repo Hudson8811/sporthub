@@ -10,9 +10,12 @@
 @import "partials/mixin";
 @import "partials/components";
 @import "partials/main";
+@import "partials/main-adaptive";
 @import "partials/header";
 @import "partials/header-adaptive";
 @import "partials/footer";
-@import "partials/main-adaptive";
+@import "partials/footer-adaptive";
+@import "partials/homepage";
+@import "partials/homepage-adaptive";
 @import "pages/news";
 @import "pages/detail-news";
