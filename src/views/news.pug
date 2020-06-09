@@ -1,0 +1,277 @@
+extends layouts/default.pug
+
+block vars
+
+block main
+	mixin news()
+		.news
+			.container.news__container
+				.news__banners-top
+					.news__banner-top
+							img(src='./img/news/banner-1-top.jpg', alt= 'banner-1')
+					.news__banner-top
+						picture
+							source(srcset='./img/news/banner-2-top.jpg', media='(min-width: 768px)')
+							img(src='./img/news/banner-2-tab.jpg', alt= 'banner-2')
+				a.news__breadcrumbs(href='#') SportHub
+					svg
+						use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
+				.news__title Футбол
+				.news__wrapper
+					.news__articles
+						.news__articles-wrapper
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-1.jpg', alt= 'news-1')
+								.news-card__content
+									.news-card__info
+										.news-card__item 15.03.2020, 14:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-2.jpg', alt= 'news-2')
+								.news-card__content
+									.news-card__info
+										.news-card__item 14.03.2020, 09:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Моуринью бросился в объятия журналиста после вопроса о Мактомини
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-3.jpg', alt= 'news-3')
+								.news-card__content
+									.news-card__info
+										.news-card__item 13.03.2020, 13:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Криштиану Роналду, ставший лучшим футболистом 2017 года по версии ФИФА
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-4.jpg', alt= 'news-4')
+								.news-card__content
+									.news-card__info
+										.news-card__item 12.03.2020, 15:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Барселона оставила горы мусора в раздевалке после победы над Мурсией в Кубке Испании
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-5.jpg', alt= 'news-5')
+								.news-card__content
+									.news-card__info
+										.news-card__item 11.03.2020, 14:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Сын Клюйверта может перейти в Тоттенхэм
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-6.jpg', alt= 'news-6')
+								.news-card__content
+									.news-card__info
+										.news-card__item 10.03.2020, 09:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Бывший вратарь ПСЖ избил жену и попал за решетку
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-7.jpg', alt= 'news-7')
+								.news-card__content
+									.news-card__info
+										.news-card__item 09.03.2020, 13:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Болельщики МЮ недоумевают по поводу состояния мизинца защитника Байи
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-8.jpg', alt= 'news-8')
+								.news-card__content
+									.news-card__info
+										.news-card__item 08.03.2020, 15:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Руни красил скамейки в качестве наказания за вождение в нетрезвом виде
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-9.jpg', alt= 'news-9')
+								.news-card__content
+									.news-card__info
+										.news-card__item 15.03.2020, 14:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-10.jpg', alt= 'news-10')
+								.news-card__content
+									.news-card__info
+										.news-card__item 14.03.2020, 09:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#') Моуринью бросился в объятия журналиста после вопроса о Мактомини
+
+						.news__more Загрузить еще
+						.news__text Импликация, следовательно, контролирует бабувизм, открывая новые горизонты.
+												| Согласно мнению известных философов, дедуктивный метод естественно порождает и
+												| обеспечивает мир, tertium nоn datur. Сомнение рефлектирует естественный закон исключённого третьего..
+												| Созерцание непредсказуемо. Аксиома силлогизма, по определению, представляет собой
+						.news__banner
+							img(src='img/news/banner-big.jpg', alt= 'banner-big')
+
+					.news__right-side
+						.news__banner
+							picture
+								source(srcset='./img/news/banner-1.jpg', media='(min-width: 1024px)')
+								source(srcset='./img/news/banner-1-tab.jpg', media='(min-width: 768px)')
+								img(src='./img/news/banner-1-mobile.jpg', alt= 'banner-1')
+						.news__banner
+							picture
+								source(srcset='./img/news/banner-2.jpg', media='(min-width: 1024px)')
+								source(srcset='./img/news/banner-2-tab.jpg', media='(min-width: 768px)')
+								img(src='./img/news/banner-2-mobile.jpg', alt= 'banner-2')
+						.news__tablet
+							.news-choise
+								.news-choise__title Выбор редакции
+								.news-choise__btns
+									.news-choise__btn.news-choise__btn--active Новости
+									.news-choise__btn Статьи
+
+								.news-choise__items.news-choise__items--active
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-1.png', alt= 'choise-1')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#') Михайлюк набрал 1000 очков за Канзас
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-2.png', alt= 'choise-2')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#') Гассиев — Влодарчик: видео боя
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-3.png', alt= 'choise-3')
+										.news-choise__info
+											.news-choise__date 12.03.2020
+											a.news-choise__desc(href='#') Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-4.png', alt= 'choise-4')
+										.news-choise__info
+											.news-choise__date 11.03.2020
+											a.news-choise__desc(href='#') НБА: Хьюстон обыграл Шарлотт
+
+								.news-choise__items
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-1.png', alt= 'choise-1')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#') Михайлюк набрал 1000 очков за Канзас123
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-2.png', alt= 'choise-2')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#') Гассиев — Влодарчик: видео боя456
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-3.png', alt= 'choise-3')
+										.news-choise__info
+											.news-choise__date 12.03.2020
+											a.news-choise__desc(href='#') Андерлехт – ПСЖ 0:4 видео голов и обзор789
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-4.png', alt= 'choise-4')
+										.news-choise__info
+											.news-choise__date 11.03.2020
+											a.news-choise__desc(href='#') НБА: Хьюстон обыграл Шарлотт987
+
+								.news-choise__more
+									a.news-choise__link(href='#') Смотреть все новости
+										svg
+											use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
+
+							.news__banner
+								picture
+									source(srcset='./img/news/banner-3.jpg', media='(min-width: 1024px)')
+									img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
+
+	+news()
