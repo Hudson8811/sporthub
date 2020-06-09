@@ -12,6 +12,20 @@ body {
 input, button {
     -webkit-appearance: none;
 }
+
+input,
+button,
+select,
+textarea {
+	font-family: $mainFont;
+	font-size: 16px;
+	line-height: 18px;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -21,12 +35,7 @@ body {
 	font-family: $mainFont;
 	font-size: 16px;
 }
-select, option, button, input, textarea{
 
-	font-family: $mainFont;
-	font-size: 16px;
-	line-height: 18px;
-}
 .main {
 	flex-grow: 1;
 }

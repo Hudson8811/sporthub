@@ -1,0 +1,190 @@
+extends layouts/default.pug
+
+block vars
+
+block main
+	mixin detail-news()
+		.detail-news.news
+			.container.news__container
+				.news__banners-top
+					.news__banner-top
+						img(src='./img/news/banner-1-top.jpg', alt= 'banner-1')
+					.news__banner-top
+						picture
+							source(srcset='./img/news/banner-2-top.jpg', media='(min-width: 768px)')
+							img(src='./img/news/banner-2-tab.jpg', alt= 'banner-2')
+				.news__breadcrumbs
+					a(href='#', target='_blank') SportHub
+					svg
+						use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
+					a(href='#', target='_blank') Футбол
+				.news__title Руни красил скамейки в качестве наказания за вождение в нетрезвом виде
+				.news__wrapper
+					.news__articles
+						.news-card--main
+							.news-card__content
+								.news-card__info
+									.news-card__item 15.03.2020, 14:30
+									.news-card__item
+										svg
+											use(xlink:href='./svg/sprite.svg#news--views')
+										span 585
+									.news-card__item
+										svg
+											use(xlink:href='./svg/sprite.svg#news--comment')
+										span 289
+						.detail-news__desc
+							p Нападающий Эвертона Уэйн Руни продолжает отрабатывать свое наказание за вождение в нетрезвом виде.
+							p В четверг, 26 октября, с утра футболист приступил к общественным работам. Руни красил скамейки в Чешире. Футболисту предстоит отработать 100 часов. Ранее он работал в доме престарелых.
+							p "Он вышел из своей Ауди и выглядел несчастным. Он пожал плечами, когда с ним попытался заговорить один из парней.
+							p Парень, который убирался, попытался с ним заговорить, но Руни прошел мимо, даже не заговорив с ним", – цитирует одного из работников Daily Mail.
+							p Напомним, суд назначил Уэйну Руни 100 часов общественных работ и лишил прав на 2 года за вождение автомобиля в пьяном виде.
+						.detail-news__share
+							.detail-news__socials
+								p Понравилась статья? <span>Поделитесь :)</span>
+								.sh-socials.sh-socials--in-header.detail-news__socials--sh-socials
+									a.sh-social.sh-social--type-fill(href="" target="_blank")
+										.sh-social-bg(style="background-color: #4E6297")
+										include ../img/header/soc-fb.svg
+									a.sh-social.sh-social--type-fill(href="" target="_blank")
+										.sh-social-bg(style="background-color: #55ACE3")
+										include ../img/header/soc-tw.svg
+									a.sh-social.sh-social--type-stroke(href="" target="_blank")
+										.sh-social-bg(style="background-image: rgb(238,160,84); background-image: -moz-linear-gradient(200deg, rgba(238,160,84,1) 0%, rgba(214,71,99,1) 50.52%, rgba(182,42,153,1) 100%); background-image: -webkit-linear-gradient(200deg, rgba(238,160,84,1) 0%, rgba(214,71,99,1) 50.52%, rgba(182,42,153,1) 100%); background-image: linear-gradient(200deg, rgba(238,160,84,1) 0%, rgba(214,71,99,1) 50.52%, rgba(182,42,153,1) 100%);")
+										include ../img/header/soc-inst.svg
+							.detail-news__rate
+								.detail-news__rate-wrapper
+									.detail-news__like-btn
+										svg
+											use(xlink:href='./svg/sprite.svg#like')
+										span Понравилась
+									.detail-news__like-btn
+										svg
+											use(xlink:href='./svg/sprite.svg#dislike')
+										span Не понравилась
+								.detail-news__votes 538 голосов
+						form.detail-news__form(action='/', method='POST')
+							.detail-news__form-title Оставить комментарий
+							.detail-news__form-inputs
+								input(type='text', name='name', placeholder='Имя')
+								input(type='email', name='email', placeholder='Электронная почта')
+							textarea(name='comment', placeholder='Комментарий')
+							input(type='submit' value='Отправить комментарий')
+						.detail-news__title Похожие новости
+						.news__articles-wrapper
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-1.jpg', alt= 'news-1')
+								.news-card__content
+									.news-card__info
+										.news-card__item 15.03.2020, 14:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#', target='_blank') Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-2.jpg', alt= 'news-2')
+								.news-card__content
+									.news-card__info
+										.news-card__item 14.03.2020, 09:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#', target='_blank') Моуринью бросился в объятия журналиста после вопроса о Мактомини
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-3.jpg', alt= 'news-3')
+								.news-card__content
+									.news-card__info
+										.news-card__item 13.03.2020, 13:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#', target='_blank') Криштиану Роналду, ставший лучшим футболистом 2017 года по версии ФИФА
+
+							.news-card
+								.news-card__bg
+									img.news-card__img(src='img/news/news-4.jpg', alt= 'news-4')
+								.news-card__content
+									.news-card__info
+										.news-card__item 12.03.2020, 15:30
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--views')
+											span 585
+										.news-card__item
+											svg
+												use(xlink:href='./svg/sprite.svg#news--comment')
+											span 289
+									a.news-card__desc(href='#', target='_blank') Барселона оставила горы мусора в раздевалке после победы над Мурсией в Кубке Испании
+
+					.news__right-side
+						.news__banner
+							picture
+								source(srcset='./img/news/banner-1.jpg', media='(min-width: 1024px)')
+								source(srcset='./img/news/banner-1-tab.jpg', media='(min-width: 768px)')
+								img(src='./img/news/banner-1-mobile.jpg', alt= 'banner-1')
+						.news__banner
+							picture
+								source(srcset='./img/news/banner-2.jpg', media='(min-width: 1024px)')
+								source(srcset='./img/news/banner-2-tab.jpg', media='(min-width: 768px)')
+								img(src='./img/news/banner-2-mobile.jpg', alt= 'banner-2')
+						.news__tablet
+							.news-choise
+								.news-choise__title Рекомендуем вам
+
+								.news-choise__items.news-choise__items--active
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-1.png', alt= 'choise-1')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#') Михайлюк набрал 1000 очков за Канзас
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-2.png', alt= 'choise-2')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#') Гассиев — Влодарчик: видео боя
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-3.png', alt= 'choise-3')
+										.news-choise__info
+											.news-choise__date 12.03.2020
+											a.news-choise__desc(href='#') Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-4.png', alt= 'choise-4')
+										.news-choise__info
+											.news-choise__date 11.03.2020
+											a.news-choise__desc(href='#') НБА: Хьюстон обыграл Шарлотт
+
+							.news__banner.news__banner--inner
+								picture
+									source(srcset='./img/news/banner-3.jpg', media='(min-width: 1024px)')
+									img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
+						.news__banner
+							img(src='./img/news/banner-3.jpg', alt= 'banner-3')
+
+	+detail-news

@@ -32,16 +32,24 @@
 	}
 
 	&__breadcrumbs {
+		display: inline-block;
 		border-radius: 3px;
 		background-color: $light-blue;
-		font-size: 14px;
-		font-weight: bold;
-		line-height: 18px;
-		color: $dark-blue;
 		padding: 6px 20px;
 
-		&:hover {
-			text-decoration: underline;
+		a {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 18px;
+			color: $dark-blue;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			&:not(:first-child) {
+				margin-left: 10px;
+			}
 		}
 
 		svg {
@@ -53,11 +61,18 @@
 	}
 
 	&__title {
-		font-size: 35px;
-		line-height: 43px;
+		font-size: 20px;
+		line-height: 24px;
 		font-weight: bold;
 		color: $black-33;
-		margin: 70px 0 50px;
+		margin: 50px 0 30px;
+		max-width: 863px;
+
+		@media (min-width: $tMin) {
+			font-size: 35px;
+			line-height: 43px;
+			margin: 70px 0 50px;
+		}
 	}
 
 	&__wrapper {
@@ -74,7 +89,6 @@
 
 		@media (min-width: $tMin) {
 			width: calc(100% + 18px);
-			margin: 0 -10px;
 		}
 
 		@media (min-width: $dMin) {
@@ -89,6 +103,12 @@
 				display: block;
 				margin-left: 10px;
 			}
+		}
+	}
+
+	&__articles-wrapper {
+		@media (min-width: $tMin) {
+			margin: 0 -10px;
 		}
 	}
 
@@ -206,14 +226,14 @@
 	margin-bottom: 20px;
 
 	@media (min-width: $tMin) {
-		width: calc(50% - 62px);
+		width: calc(50% - 72px);
 		padding: 20px;
 		margin: 0 10px 20px;
 	}
 
 	@media (min-width: $dMin) {
-		width: calc(50% - 154px);
-		padding: 40px 92px 40px 40px;
+		width: calc(50% - 104px);
+		padding: 40px;
 	}
 
 	&__bg {
@@ -228,6 +248,9 @@
 	&__img,
 	&__content {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	&__img {
@@ -244,7 +267,7 @@
 
 	&__info {
 		display: flex;
-		margin-bottom: 75px;
+		flex-wrap: wrap;
 	}
 	
 	&__item {
@@ -259,6 +282,8 @@
 		align-items: center;
 
 		svg {
+			fill: $dark-blue;
+			stroke: $dark-blue;
 			margin-right: 10px;
 		}
 
@@ -280,6 +305,10 @@
 				display: block;
 			}
 
+			@media (min-width: $dMin) and (max-width: 1151px) {
+				margin-top: 10px;
+			}
+
 			svg {
 				width: 16px;
 				height: 16px;
@@ -288,11 +317,17 @@
 	}
 
 	&__desc {
-		font-size: 18px;
-		line-height: 25px;
+		display: block;
+		font-size: 15px;
+		line-height: 22px;
 		font-weight: 500;
 		color: #fff;
-		max-width: 315px;
+		max-width: 90%;
+
+		@media (min-width: $tMin) {
+			font-size: 18px;
+			line-height: 25px;
+		}
 	}
 }
 

@@ -13,7 +13,8 @@ block main
 						picture
 							source(srcset='./img/news/banner-2-top.jpg', media='(min-width: 768px)')
 							img(src='./img/news/banner-2-tab.jpg', alt= 'banner-2')
-				a.news__breadcrumbs(href='#') SportHub
+				.news__breadcrumbs
+					a(href='#', target='_blank') SportHub
 					svg
 						use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
 				.news__title Футбол
@@ -34,7 +35,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+									a.news-card__desc(href='#', target='_blank') Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
 
 							.news-card
 								.news-card__bg
@@ -50,7 +51,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Моуринью бросился в объятия журналиста после вопроса о Мактомини
+									a.news-card__desc(href='#', target='_blank') Моуринью бросился в объятия журналиста после вопроса о Мактомини
 
 							.news-card
 								.news-card__bg
@@ -66,7 +67,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Криштиану Роналду, ставший лучшим футболистом 2017 года по версии ФИФА
+									a.news-card__desc(href='#', target='_blank') Криштиану Роналду, ставший лучшим футболистом 2017 года по версии ФИФА
 
 							.news-card
 								.news-card__bg
@@ -82,7 +83,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Барселона оставила горы мусора в раздевалке после победы над Мурсией в Кубке Испании
+									a.news-card__desc(href='#', target='_blank') Барселона оставила горы мусора в раздевалке после победы над Мурсией в Кубке Испании
 
 							.news-card
 								.news-card__bg
@@ -98,7 +99,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Сын Клюйверта может перейти в Тоттенхэм
+									a.news-card__desc(href='#', target='_blank') Сын Клюйверта может перейти в Тоттенхэм
 
 							.news-card
 								.news-card__bg
@@ -114,7 +115,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Бывший вратарь ПСЖ избил жену и попал за решетку
+									a.news-card__desc(href='#', target='_blank') Бывший вратарь ПСЖ избил жену и попал за решетку
 
 							.news-card
 								.news-card__bg
@@ -130,7 +131,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Болельщики МЮ недоумевают по поводу состояния мизинца защитника Байи
+									a.news-card__desc(href='#', target='_blank') Болельщики МЮ недоумевают по поводу состояния мизинца защитника Байи
 
 							.news-card
 								.news-card__bg
@@ -146,7 +147,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Руни красил скамейки в качестве наказания за вождение в нетрезвом виде
+									a.news-card__desc(href='#', target='_blank') Руни красил скамейки в качестве наказания за вождение в нетрезвом виде
 
 							.news-card
 								.news-card__bg
@@ -162,7 +163,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+									a.news-card__desc(href='#', target='_blank') Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
 
 							.news-card
 								.news-card__bg
@@ -178,7 +179,7 @@ block main
 											svg
 												use(xlink:href='./svg/sprite.svg#news--comment')
 											span 289
-									a.news-card__desc(href='#') Моуринью бросился в объятия журналиста после вопроса о Мактомини
+									a.news-card__desc(href='#', target='_blank') Моуринью бросился в объятия журналиста после вопроса о Мактомини
 
 						.news__more Загрузить еще
 						.news__text Импликация, следовательно, контролирует бабувизм, открывая новые горизонты.
@@ -212,28 +213,28 @@ block main
 											img(src='img/news/choise-1.png', alt= 'choise-1')
 										.news-choise__info
 											.news-choise__date 15.03.2020
-											a.news-choise__desc(href='#') Михайлюк набрал 1000 очков за Канзас
+											a.news-choise__desc(href='#', target='_blank') Михайлюк набрал 1000 очков за Канзас
 
 									.news-choise__item
 										.news-choise__preview
 											img(src='img/news/choise-2.png', alt= 'choise-2')
 										.news-choise__info
 											.news-choise__date 15.03.2020
-											a.news-choise__desc(href='#') Гассиев — Влодарчик: видео боя
+											a.news-choise__desc(href='#', target='_blank') Гассиев — Влодарчик: видео боя
 
 									.news-choise__item
 										.news-choise__preview
 											img(src='img/news/choise-3.png', alt= 'choise-3')
 										.news-choise__info
 											.news-choise__date 12.03.2020
-											a.news-choise__desc(href='#') Андерлехт – ПСЖ 0:4 видео голов и обзор
+											a.news-choise__desc(href='#', target='_blank') Андерлехт – ПСЖ 0:4 видео голов и обзор
 
 									.news-choise__item
 										.news-choise__preview
 											img(src='img/news/choise-4.png', alt= 'choise-4')
 										.news-choise__info
 											.news-choise__date 11.03.2020
-											a.news-choise__desc(href='#') НБА: Хьюстон обыграл Шарлотт
+											a.news-choise__desc(href='#', target='_blank') НБА: Хьюстон обыграл Шарлотт
 
 								.news-choise__items
 									.news-choise__item
@@ -241,31 +242,31 @@ block main
 											img(src='img/news/choise-1.png', alt= 'choise-1')
 										.news-choise__info
 											.news-choise__date 15.03.2020
-											a.news-choise__desc(href='#') Михайлюк набрал 1000 очков за Канзас123
+											a.news-choise__desc(href='#', target='_blank') Михайлюк набрал 1000 очков за Канзас123
 
 									.news-choise__item
 										.news-choise__preview
 											img(src='img/news/choise-2.png', alt= 'choise-2')
 										.news-choise__info
 											.news-choise__date 15.03.2020
-											a.news-choise__desc(href='#') Гассиев — Влодарчик: видео боя456
+											a.news-choise__desc(href='#', target='_blank') Гассиев — Влодарчик: видео боя456
 
 									.news-choise__item
 										.news-choise__preview
 											img(src='img/news/choise-3.png', alt= 'choise-3')
 										.news-choise__info
 											.news-choise__date 12.03.2020
-											a.news-choise__desc(href='#') Андерлехт – ПСЖ 0:4 видео голов и обзор789
+											a.news-choise__desc(href='#', target='_blank') Андерлехт – ПСЖ 0:4 видео голов и обзор789
 
 									.news-choise__item
 										.news-choise__preview
 											img(src='img/news/choise-4.png', alt= 'choise-4')
 										.news-choise__info
 											.news-choise__date 11.03.2020
-											a.news-choise__desc(href='#') НБА: Хьюстон обыграл Шарлотт987
+											a.news-choise__desc(href='#', target='_blank') НБА: Хьюстон обыграл Шарлотт987
 
 								.news-choise__more
-									a.news-choise__link(href='#') Смотреть все новости
+									a.news-choise__link(href='#', target='_blank') Смотреть все новости
 										svg
 											use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
 
