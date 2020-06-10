@@ -87,10 +87,6 @@
 	&__articles {
 		width: 100%;
 
-		@media (min-width: $tMin) {
-			width: calc(100% + 18px);
-		}
-
 		@media (min-width: $dMin) {
 			width: calc(75.41% + 37px);
 		}
@@ -198,8 +194,7 @@
 		}
 
 		@media (min-width: $tMin) {
-			width: calc(100% - 24px);
-			margin-left: 10px;
+			width: calc(100% - 4px);
 		}
 	}
 
@@ -207,10 +202,6 @@
 		line-height: 24px;
 		font-weight: 500;
 		margin: 50px 0;
-
-		@media (min-width: $tMin) {
-			margin-left: 10px;
-		}
 	}
 }
 
@@ -226,7 +217,7 @@
 	margin-bottom: 20px;
 
 	@media (min-width: $tMin) {
-		width: calc(50% - 72px);
+		width: calc(50% - 62px);
 		padding: 20px;
 		margin: 0 10px 20px;
 	}
@@ -342,8 +333,8 @@
 	margin-bottom: 20px;
 
 	@media (min-width: $tMin) {
-		width: calc(50% - 50px);
-		margin-right: 20px;
+		width: calc(50% - 62px);
+		margin-right: 25px;
 	}
 
 	@media (min-width: $dMin) {

@@ -87,13 +87,15 @@
 		border-radius: 5px;
 
 		@media (min-width: $tMin) {
+			width: calc(100% - 60px);
 			flex-direction: row;
 			padding: 20px 30px;
-			margin-top: 0;
+			margin-top: 30px;
 		}
 
 		@media (min-width: $dMin) {
 			max-width: 458px;
+			margin-top: 0;
 		}
 	}
 
@@ -338,6 +340,14 @@
 
 
 	.news {
+		&__banners-top {
+			margin-bottom: 20px;
+
+			@media (min-width: $tMin) {
+				margin-bottom: 30px;
+			}
+		}
+
 		&__articles {
 			margin: 0;
 		}
@@ -387,9 +397,13 @@
 		margin: 0;
 		border-radius: 5px;
 
-		@media (min-width: $dMin) {
+		@media (min-width: $tMin) {
 			width: calc(100% - 80px);
 			padding: 40px;
+			height: 370px;
+		}
+
+		@media (min-width: $dMin) {
 			height: 420px;
 		}
 
@@ -438,6 +452,101 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+	}
+}
+
+.comments {
+	margin-top: 30px;
+
+	@media (min-width: $tMin) {
+		margin-top: 50px;
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: bold;
+		color: $black-33;
+
+		@media (min-width: $tMin) {
+			font-size: 20px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		margin-top: 20px;
+		padding: 20px;
+		border-radius: 5px;
+		background-color: $light-blue;
+
+		@media (min-width: $tMin) {
+			padding: 30px 40px;
+		}
+
+		&:nth-child(odd) {
+			width: calc(100% - 60px);
+			margin-left: auto;
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 30px;
+				left: -16px;
+				border: 8.5px solid transparent;
+				border-top: 8.5px solid $light-blue;
+				border-right: 8.5px solid $light-blue;
+			}
+
+			@media (min-width: $tMin) {
+				width: calc(100% - 180px);
+			}
+		}
+	}
+
+	&__top,
+	&__answer {
+		display: flex;
+	}
+
+	&__name {
+		font-size: 15px;
+		line-height: 19px;
+		font-weight: bold;
+		color: $black-33;
+	}
+
+	&__date {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 500;
+		color: $gray-b6;
+		margin-left: 20px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 500;
+		color: $black-33;
+		margin: 20px 0;
+	}
+
+	&__answer {
+		svg {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+		}
+
+		span {
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: bold;
+			color: $dark-blue;
+			cursor: pointer;
 		}
 	}
 }

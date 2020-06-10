@@ -70,6 +70,40 @@ block main
 								input(type='email', name='email', placeholder='Электронная почта')
 							textarea(name='comment', placeholder='Комментарий')
 							input(type='submit' value='Отправить комментарий')
+						.comments
+							.comments__title 3 комментария
+							.comments__item
+								.comments__top
+									.comments__name Константин
+									.comments__date 15.03.2020, 14:30
+								.comments__text Все ребята к этой ситуации отнеслись нормально, с пониманием. Хорошо, что боксер нашей компании
+																| Евгениос Лазаридис, который был в Киеве на спаррингах у Владислава Сиренко, и тренер Влада Джеймс Али Башир
+																| успели вылететь из Украины до закрытия границ
+								.comments__answer
+									svg
+										use(xlink:href='./svg/sprite.svg#answer')
+									span Ответить
+							.comments__item
+								.comments__top
+									.comments__name Михаил
+									.comments__date 15.03.2020, 14:30
+								.comments__text О коронавирусе я уже устал говорить, моё мнение таково: здоровье людей на первом месте,
+																| но это огромный урон всей мировой экономике
+								.comments__answer
+									svg
+										use(xlink:href='./svg/sprite.svg#answer')
+									span Ответить
+							.comments__item
+								.comments__top
+									.comments__name Максим
+									.comments__date 15.03.2020, 14:30
+								.comments__text Многие, кстати, критикуют меня, что я не даю ему возможности подраться с сильным соперником, но поймите:
+																| он пришел в бокс из единоборств, у него не было такой любительской школы как у тех же Шведенко или Сиренко.
+																| Захожий обладает огромнейшим потенциалом, а ему только 26 лет!
+								.comments__answer
+									svg
+										use(xlink:href='./svg/sprite.svg#answer')
+									span Ответить
 						.detail-news__title Похожие новости
 						.news__articles-wrapper
 							.news-card
