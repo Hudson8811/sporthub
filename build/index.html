@@ -419,7 +419,450 @@
           </div>
         </div>
       </section>
-      <!--.rgre(style="height: 100vh;")-->
+      <section class="section-hp-main">
+        <div class="container">
+          <div class="news__banners-top news__banners-top--homepage">
+            <div class="news__banner-top"><img src="./img/news/banner-1-top.jpg" alt="banner-1"></div>
+            <div class="news__banner-top">
+              <picture>
+                <source srcset="./img/news/banner-2-top.jpg" media="(min-width: 768px)"><img src="./img/news/banner-2-tab.jpg" alt="banner-2">
+              </picture>
+            </div>
+          </div>
+          <h2 class="hp-h2">Последние события</h2>
+          <div class="hp-default-layout hp-default-layout--hp-margins">
+            <div class="hp-default-layout__main">
+              <div class="lastest-events-block">
+                <div class="lastest-events-main"><a class="main-last-event" href="">
+                    <div class="main-last-event-card" style="background-image: url(img/detail-news/detail-news.jpg);">
+                      <div class="mle-card-content">
+                        <div class="mle-card-top">
+                          <div class="category-label" style="background: #009A06;">
+                            <!--
+                            Футбол: sprite.svg#sport--fb
+                            Баскетбол sprite.svg#sport--bb
+                            Хоккей sprite.svg#sport--hk
+                            Теннис sprite.svg#sport--te
+                            Волейбол sprite.svg#sport--vb
+                            Другие sprite.svg#sport--other
+                            -->
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#sport--fb"></use>
+                            </svg><span>Футбол</span>
+                          </div>
+                        </div>
+                        <div class="mle-card-bottom">
+                          <div class="mle-card-bottom__item mle-card-bottom__item--date"><span>15.03.2020, 14:30</span></div>
+                          <div class="mle-card-bottom__item mle-card-bottom__item--views">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#no-color--views"></use>
+                            </svg><span>585</span>
+                          </div>
+                          <div class="mle-card-bottom__item mle-card-bottom__item--comments">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#no-color--comment"></use>
+                            </svg><span>289</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="mle-title">Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018</h3>
+                    <div class="mle-excerpt">Жеребьевка финального этапа ЧМ-2018 по футболу, Москва, 1 декабря. Сборная Уругвая по футболу стала соперником команды России по группе А на чемпионате мира 2018 года</div></a></div>
+                <div class="lastest-events-other">
+                  <div class="lastest-events-other-row"><a class="lastest-events-other-item" href="" style="background-image:url(img/homepage/other-events-1.jpg)">
+                      <div class="leo-item-content">
+                        <div class="leo-item__date">15.03.2020</div>
+                        <div class="leo-item__title">Михайлюк набрал 1000 очков за Канзас</div>
+                      </div></a><a class="lastest-events-other-item" href="" style="background-image:url(img/homepage/other-events-2.jpg)">
+                      <div class="leo-item-content">
+                        <div class="leo-item__date">12.03.2020</div>
+                        <div class="leo-item__title">Андерлехт – ПСЖ 0:4 видео голов и обзор</div>
+                      </div></a><a class="lastest-events-other-item" href="" style="background-image:url(img/homepage/other-events-1.jpg)">
+                      <div class="leo-item-content">
+                        <div class="leo-item__date">15.03.2020</div>
+                        <div class="leo-item__title">Михайлюк набрал 1000 очков за Канзас</div>
+                      </div></a><a class="lastest-events-other-item" href="" style="background-image:url(img/homepage/other-events-2.jpg)">
+                      <div class="leo-item-content">
+                        <div class="leo-item__date">12.03.2020</div>
+                        <div class="leo-item__title">Андерлехт – ПСЖ 0:4 видео голов и обзор</div>
+                      </div></a><a class="lastest-events-other-item" href="" style="background-image:url(img/homepage/other-events-1.jpg)">
+                      <div class="leo-item-content">
+                        <div class="leo-item__date">15.03.2020</div>
+                        <div class="leo-item__title">Михайлюк набрал 1000 очков за Канзас</div>
+                      </div></a><a class="lastest-events-other-item" href="" style="background-image:url(img/homepage/other-events-2.jpg)">
+                      <div class="leo-item-content">
+                        <div class="leo-item__date">12.03.2020</div>
+                        <div class="leo-item__title">Андерлехт – ПСЖ 0:4 видео голов и обзор</div>
+                      </div></a></div>
+                </div>
+              </div>
+              <div class="hp-news-top">
+                <h2 class="hp-h2 hp-h2--hp-news">Новости</h2><a class="hp-news-top-link-all" href=""><span class="dom">Все новости</span><span class="ddt">Смотреть все новости</span></a>
+              </div>
+              <div class="hp-news-tab-controls-wrap">
+                <div class="dom hp-news-tab-controls-mobile-acc">
+                  <div class="hp-news-tab-control">
+                    <svg class="svg-def-color-others">
+                      <use xlink:href="./svg/sprite.svg#sport--all"></use>
+                    </svg><span> Все виды</span>
+                  </div>
+                </div>
+                <div class="hp-news-tab-controls" data-tabs-wrap-target="#tabs-wrap-1">
+                  <!--
+                  .svg-def-color-football
+                  .svg-def-color-tennis
+                  .svg-def-color-hockey
+                  .svg-def-color-volleyball
+                  .svg-def-color-basketball
+                  .svg-def-color-others
+                  Футбол: sprite.svg#sport--fb
+                  Баскетбол sprite.svg#sport--bb
+                  Хоккей sprite.svg#sport--hk
+                  Теннис sprite.svg#sport--te
+                  Волейбол sprite.svg#sport--vb
+                  Другие sprite.svg#sport--other
+                  
+                  
+                  -->
+                  <div class="hp-news-tab-control hp-news-tab-control--active">
+                    <svg class="svg-def-color-others">
+                      <use xlink:href="./svg/sprite.svg#sport--all"></use>
+                    </svg><span> Все виды</span>
+                  </div>
+                  <div class="hp-news-tab-control">
+                    <svg class="svg-def-color-football">
+                      <use xlink:href="./svg/sprite.svg#sport--fb"></use>
+                    </svg><span> Футбол</span>
+                  </div>
+                  <div class="hp-news-tab-control">
+                    <svg class="svg-def-color-tennis">
+                      <use xlink:href="./svg/sprite.svg#sport--te"></use>
+                    </svg><span> Теннис</span>
+                  </div>
+                  <div class="hp-news-tab-control">
+                    <svg class="svg-def-color-hockey">
+                      <use xlink:href="./svg/sprite.svg#sport--hk"></use>
+                    </svg><span> Хоккей</span>
+                  </div>
+                  <div class="hp-news-tab-control">
+                    <svg class="svg-def-color-basketball">
+                      <use xlink:href="./svg/sprite.svg#sport--bb"></use>
+                    </svg><span> Баскетбол</span>
+                  </div>
+                </div><a class="hp-news-tab-controls-more" href="">Еще</a>
+              </div>
+              <div class="hp-news-tabs" id="tabs-wrap-1">
+                <div class="hp-news-tab hp-news-tab--active"><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #009A06;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--fb"></use>
+                        </svg><span>Футбол</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Жеребьевка Лиги чемпионов: как это было</h3>
+                    <div class="hp-news-item-excerpt">В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E8B500;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--te"></use>
+                        </svg><span>Теннис</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Цуренко объяснила отказ выходить на матч в Монтеррее</h3>
+                    <div class="hp-news-item-excerpt">Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #1D88B6;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--hk"></use>
+                        </svg><span>Хоккей</span>
+                      </div>
+                      <div class="hp-news-item-date">13.03.2020, 11:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным</h3>
+                    <div class="hp-news-item-excerpt">В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E57E25;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--bb"></use>
+                        </svg><span>Баскетбол</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад</h3>
+                    <div class="hp-news-item-excerpt">В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...</div></a></div>
+                <div class="hp-news-tab"><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #009A06;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--fb"></use>
+                        </svg><span>Футбол</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">2Жеребьевка Лиги чемпионов: как это было</h3>
+                    <div class="hp-news-item-excerpt">В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E8B500;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--te"></use>
+                        </svg><span>Теннис</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Цуренко объяснила отказ выходить на матч в Монтеррее</h3>
+                    <div class="hp-news-item-excerpt">Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #1D88B6;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--hk"></use>
+                        </svg><span>Хоккей</span>
+                      </div>
+                      <div class="hp-news-item-date">13.03.2020, 11:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным</h3>
+                    <div class="hp-news-item-excerpt">В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E57E25;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--bb"></use>
+                        </svg><span>Баскетбол</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад</h3>
+                    <div class="hp-news-item-excerpt">В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...</div></a></div>
+                <div class="hp-news-tab"><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #009A06;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--fb"></use>
+                        </svg><span>Футбол</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">3Жеребьевка Лиги чемпионов: как это было</h3>
+                    <div class="hp-news-item-excerpt">В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E8B500;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--te"></use>
+                        </svg><span>Теннис</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Цуренко объяснила отказ выходить на матч в Монтеррее</h3>
+                    <div class="hp-news-item-excerpt">Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #1D88B6;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--hk"></use>
+                        </svg><span>Хоккей</span>
+                      </div>
+                      <div class="hp-news-item-date">13.03.2020, 11:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным</h3>
+                    <div class="hp-news-item-excerpt">В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E57E25;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--bb"></use>
+                        </svg><span>Баскетбол</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад</h3>
+                    <div class="hp-news-item-excerpt">В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...</div></a></div>
+                <div class="hp-news-tab"><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top-wrap">
+                      <div class="hp-news-item-top">
+                        <div class="category-label category-label--hp-news-item-top" style="background: #009A06;">
+                          <svg>
+                            <use xlink:href="./svg/sprite.svg#sport--fb"></use>
+                          </svg><span>Футбол</span>
+                        </div>
+                        <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                      </div>
+                    </div>
+                    <h3 class="hp-news-item-title">4Жеребьевка Лиги чемпионов: как это было</h3>
+                    <div class="hp-news-item-excerpt">В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E8B500;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--te"></use>
+                        </svg><span>Теннис</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Цуренко объяснила отказ выходить на матч в Монтеррее</h3>
+                    <div class="hp-news-item-excerpt">Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top-wrap">
+                      <div class="hp-news-item-top">
+                        <div class="category-label category-label--hp-news-item-top" style="background: #1D88B6;">
+                          <svg>
+                            <use xlink:href="./svg/sprite.svg#sport--hk"></use>
+                          </svg><span>Хоккей</span>
+                        </div>
+                        <div class="hp-news-item-date">13.03.2020, 11:30</div>
+                      </div>
+                    </div>
+                    <h3 class="hp-news-item-title">Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным</h3>
+                    <div class="hp-news-item-excerpt">В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top-wrap">
+                      <div class="hp-news-item-top">
+                        <div class="category-label category-label--hp-news-item-top" style="background: #E57E25;">
+                          <svg>
+                            <use xlink:href="./svg/sprite.svg#sport--bb"></use>
+                          </svg><span>Баскетбол</span>
+                        </div>
+                        <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                      </div>
+                    </div>
+                    <h3 class="hp-news-item-title">Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад</h3>
+                    <div class="hp-news-item-excerpt">В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...</div></a></div>
+                <div class="hp-news-tab"><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top-wrap">
+                      <div class="hp-news-item-top">
+                        <div class="category-label category-label--hp-news-item-top" style="background: #009A06;">
+                          <svg>
+                            <use xlink:href="./svg/sprite.svg#sport--fb"></use>
+                          </svg><span>Футбол</span>
+                        </div>
+                        <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                      </div>
+                    </div>
+                    <h3 class="hp-news-item-title">5Жеребьевка Лиги чемпионов: как это было</h3>
+                    <div class="hp-news-item-excerpt">В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top">
+                      <div class="category-label category-label--hp-news-item-top" style="background: #E8B500;">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#sport--te"></use>
+                        </svg><span>Теннис</span>
+                      </div>
+                      <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                    </div>
+                    <h3 class="hp-news-item-title">Цуренко объяснила отказ выходить на матч в Монтеррее</h3>
+                    <div class="hp-news-item-excerpt">Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top-wrap">
+                      <div class="hp-news-item-top">
+                        <div class="category-label category-label--hp-news-item-top" style="background: #1D88B6;">
+                          <svg>
+                            <use xlink:href="./svg/sprite.svg#sport--hk"></use>
+                          </svg><span>Хоккей</span>
+                        </div>
+                        <div class="hp-news-item-date">13.03.2020, 11:30</div>
+                      </div>
+                    </div>
+                    <h3 class="hp-news-item-title">Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным</h3>
+                    <div class="hp-news-item-excerpt">В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...</div></a><a class="hp-news-item" href="">
+                    <div class="hp-news-item-top-wrap">
+                      <div class="hp-news-item-top">
+                        <div class="category-label category-label--hp-news-item-top" style="background: #E57E25;">
+                          <svg>
+                            <use xlink:href="./svg/sprite.svg#sport--bb"></use>
+                          </svg><span>Баскетбол</span>
+                        </div>
+                        <div class="hp-news-item-date">15.03.2020, 14:30</div>
+                      </div>
+                    </div>
+                    <h3 class="hp-news-item-title">Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад</h3>
+                    <div class="hp-news-item-excerpt">В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...</div></a></div>
+              </div>
+              <div class="news__banner">
+                <picture>
+                  <source srcset="./img/news/banner-3.jpg" media="(min-width: 1024px)"><img src="./img/news/banner-3-tab.jpg" alt="banner-3">
+                </picture>
+              </div>
+            </div>
+            <div class="hp-default-layout__sidebar news__right-side">
+              <div class="news__banner">
+                <picture>
+                  <source srcset="./img/news/banner-1.jpg" media="(min-width: 1024px)">
+                  <source srcset="./img/news/banner-1-tab.jpg" media="(min-width: 768px)"><img src="./img/news/banner-1-mobile.jpg" alt="banner-1">
+                </picture>
+              </div>
+              <div class="news__banner">
+                <picture>
+                  <source srcset="./img/news/banner-2.jpg" media="(min-width: 1024px)">
+                  <source srcset="./img/news/banner-2-tab.jpg" media="(min-width: 768px)"><img src="./img/news/banner-2-mobile.jpg" alt="banner-2">
+                </picture>
+              </div>
+              <div class="news__tablet">
+                <div class="news-choise">
+                  <div class="news-choise__title">Выбор редакции</div>
+                  <div class="news-choise__btns">
+                    <div class="news-choise__btn news-choise__btn--active">Новости</div>
+                    <div class="news-choise__btn">Статьи</div>
+                  </div>
+                  <div class="news-choise__items news-choise__items--active">
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-1.png" alt="choise-1"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">15.03.2020</div><a class="news-choise__desc" href="#" target="_blank">Михайлюк набрал 1000 очков за Канзас</a>
+                      </div>
+                    </div>
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-2.png" alt="choise-2"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">15.03.2020</div><a class="news-choise__desc" href="#" target="_blank">Гассиев — Влодарчик: видео боя</a>
+                      </div>
+                    </div>
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-3.png" alt="choise-3"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">12.03.2020</div><a class="news-choise__desc" href="#" target="_blank">Андерлехт – ПСЖ 0:4 видео голов и обзор</a>
+                      </div>
+                    </div>
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-4.png" alt="choise-4"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">11.03.2020</div><a class="news-choise__desc" href="#" target="_blank">НБА: Хьюстон обыграл Шарлотт</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-choise__items">
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-1.png" alt="choise-1"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">15.03.2020</div><a class="news-choise__desc" href="#" target="_blank">Михайлюк набрал 1000 очков за Канзас123</a>
+                      </div>
+                    </div>
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-2.png" alt="choise-2"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">15.03.2020</div><a class="news-choise__desc" href="#" target="_blank">Гассиев — Влодарчик: видео боя456</a>
+                      </div>
+                    </div>
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-3.png" alt="choise-3"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">12.03.2020</div><a class="news-choise__desc" href="#" target="_blank">Андерлехт – ПСЖ 0:4 видео голов и обзор789</a>
+                      </div>
+                    </div>
+                    <div class="news-choise__item">
+                      <div class="news-choise__preview"><img src="img/news/choise-4.png" alt="choise-4"></div>
+                      <div class="news-choise__info">
+                        <div class="news-choise__date">11.03.2020</div><a class="news-choise__desc" href="#" target="_blank">НБА: Хьюстон обыграл Шарлотт987</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-choise__more"><a class="news-choise__link" href="#" target="_blank">Смотреть все новости
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#news--article-switcher-arrow-rb"></use>
+                      </svg></a></div>
+                </div>
+                <div class="news__banner">
+                  <picture>
+                    <source srcset="./img/news/banner-3.jpg" media="(min-width: 1024px)"><img src="./img/news/banner-3-tab.jpg" alt="banner-3">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="footer-top-part">
