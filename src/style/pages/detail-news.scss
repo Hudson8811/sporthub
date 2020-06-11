@@ -575,6 +575,7 @@
 .popup-comment {
 	padding: 40px 50px;
 	border-radius: 5px;
+	overflow: visible;
 
 	&__icon {
 		text-align: center;
@@ -596,23 +597,41 @@
 		text-align: center;
 		margin-top: 40px;
 	}
+
+	&__close {
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		width: 30px;
+		height: 30px;
+		background-color: #0E3770;
+		border-radius: 5px;
+		padding: 0;
+		cursor: pointer;
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 15px;
+			height: 1px;
+			background-color: #fff;
+			position: absolute;
+			top: 14px;
+			right: 7px;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
 }
 
 .fancybox-is-open .fancybox-bg {
 	opacity: 0.5;
 	background: #0E3770;
-}
-
-.fancybox-close-small {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 30px;
-	height: 30px;
-	background-color: #0E3770;
-	border-radius: 5px;
-
-	svg {
-		fill: #fff;
-	}
 }

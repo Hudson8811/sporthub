@@ -7,6 +7,9 @@ $(document).ready(function () {
 		},
 		afterClose: function(){
 			$("body").css({'overflow-y':'visible'});
+		},
+		btnTpl : {
+			smallBtn : '<div data-fancybox-close class="popup-comment__close"></div>'
 		}
 	});
 });
