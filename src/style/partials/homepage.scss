@@ -399,13 +399,8 @@
         width: 14px;
         height: 14px;
         margin-right: 10px;
-        fill: #ffffff !important;
-        stroke: #ffffff !important;
-
-        use {
-            fill: #ffffff !important;
-            stroke: #ffffff !important;
-        }
+        fill: #ffffff;
+        stroke: #ffffff;
     }
 }
 
@@ -642,7 +637,11 @@
     &:focus {}
 }
 
-.hp-news-tabs {}
+.hp-news-tabs {
+    &--articles {
+        margin-bottom: 50px;
+    }
+}
 
 .hp-news-tab {
     display: none;
