@@ -6,7 +6,11 @@ $(document).ready(function () {
       $(this).addClass('hp-news-tab-control--active').siblings().removeClass('hp-news-tab-control--active');
       $(target).stop(true,true).hide(300);
       $(target+' .hp-news-tab').eq($(this).index()).addClass('hp-news-tab--active').siblings().removeClass('hp-news-tab--active');
+      $(this).parent().siblings('.hp-news-tab-controls-mobile-acc').removeClass('hp-news-tab-controls-mobile-acc--active').html( $(this).clone().removeClass('hp-news-tab-control--active'));
       $(target).stop(true,true).fadeIn(300);
    });
-});
 
+   $('.hp-news-tab-controls-mobile-acc').click(function(){
+      $(this).toggleClass('hp-news-tab-controls-mobile-acc--active');
+   });
+});
