@@ -1,4 +1,6 @@
 .detail-news {
+	margin-top: 30px;
+
 	&__desc {
 		margin-top: 20px;
 
@@ -119,6 +121,11 @@
 		}
 
 		&:first-child {
+			svg {
+				fill: #009A06;
+				stroke: #009A06;
+			}
+
 			span {
 				color: $green;
 
@@ -135,6 +142,11 @@
 		}
 
 		&:last-child {
+			svg {
+				fill: #DE2A2D;
+				stroke: #DE2A2D;
+			}
+
 			span {
 				color: $red;
 
@@ -557,5 +569,50 @@
 			color: $dark-blue;
 			cursor: pointer;
 		}
+	}
+}
+
+.popup-comment {
+	padding: 40px 50px;
+	border-radius: 5px;
+
+	&__icon {
+		text-align: center;
+
+		svg {
+			width: 50px;
+			height: 42px;
+			fill: #0E3770;
+		}
+	}
+
+	&__thanks {
+		width: 100%;
+		max-width: 265px;
+		font-size: 18px;
+		line-height: 23px;
+		font-weight: bold;
+		color: $black-33;
+		text-align: center;
+		margin-top: 40px;
+	}
+}
+
+.fancybox-is-open .fancybox-bg {
+	opacity: 0.5;
+	background: #0E3770;
+}
+
+.fancybox-close-small {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	background-color: #0E3770;
+	border-radius: 5px;
+
+	svg {
+		fill: #fff;
 	}
 }

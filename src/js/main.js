@@ -10,3 +10,4 @@
 //= partials/header.js
 //= partials/main.js
 //= partials/news.js
+//= partials/detail-news.js

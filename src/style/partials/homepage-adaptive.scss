@@ -87,13 +87,13 @@
     .hp-default-layout {
         flex-direction: column;
 
-        .news__banner:first-child {
+       /* .news__banner:first-child {
             display: none;
-        }
+        }*/
 
-        .news__banner:nth-child(2) {
+        /*.news__banner:nth-child(2) {
             order: unset;
-        }
+        }*/
     }
 
     .hp-default-layout__main {

@@ -4,6 +4,7 @@ block vars
 
 block main
 	mixin detail-news()
+		+header-bottom()
 		.detail-news.news
 			.container.news__container
 				.news__banners-top
@@ -70,7 +71,7 @@ block main
 								input(type='text', name='name', placeholder='Имя')
 								input(type='email', name='email', placeholder='Электронная почта')
 							textarea(name='comment', placeholder='Комментарий')
-							input(type='submit' value='Отправить комментарий')
+							input.detail-news__form-submit(type='submit' value='Отправить комментарий' data-src='#success')
 						.comments
 							.comments__title 3 комментария
 							.comments__item
@@ -221,5 +222,11 @@ block main
 									img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
 						.news__banner
 							img(src='./img/news/banner-3.jpg', alt= 'banner-3')
+
+		#success.popup-comment(style='display: none;')
+			.popup-comment__icon
+				svg
+					use(xlink:href='./svg/sprite.svg#like')
+			.popup-comment__thanks Спасибо, мы скоро опубликуем ваш комментарий
 
 	+detail-news

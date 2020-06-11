@@ -160,3 +160,15 @@ $(document).ready(function () {
 		$('.news-choise__items').hide().eq($(this).index()).fadeIn(300);
 	});
 });
+$(document).ready(function () {
+	$('.detail-news__form-submit').fancybox({
+		touch: false,
+		scrolling: 'no',
+		beforeShow: function(){
+			$("body").css({'overflow-y':'hidden'});
+		},
+		afterClose: function(){
+			$("body").css({'overflow-y':'visible'});
+		}
+	});
+});

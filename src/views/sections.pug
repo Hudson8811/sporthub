@@ -4,8 +4,21 @@ block vars
 
 block main
 	mixin sections()
+		+header-bottom()
 		section.sections
 			.container
+				.news__banners-top
+					.news__banner-top
+						img(src='./img/news/banner-1-top.jpg', alt= 'banner-1')
+					.news__banner-top
+						picture
+							source(srcset='./img/news/banner-2-top.jpg', media='(min-width: 768px)')
+							img(src='./img/news/banner-2-tab.jpg', alt= 'banner-2')
+				.news__breadcrumbs
+					a(href='#', target='_blank') SportHub
+					svg
+						use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
+					a(href='#', target='_blank') Разделы
 				h2.hp-h2 Список разделов новостей по всем видам спорта
 				.hp-default-layout.hp-default-layout--hp-margins
 					.hp-default-layout__main
@@ -279,9 +292,7 @@ block main
 													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
 								.news__more Смотреть еще
 						.news__banner
-							picture
-								source(srcset='./img/news/banner-big.jpg', media='(min-width: 1024px)')
-								img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
+							img(src='./img/news/banner-big.jpg', alt= 'banner-big')
 
 
 					.hp-default-layout__sidebar.news__right-side

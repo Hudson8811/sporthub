@@ -1,9 +1,15 @@
 .news {
-	margin-top: 30px;
+	&__container {
+		margin-top: 30px;
+	}
 
 	&__banners-top {
 		display: flex;
-		margin-bottom: 30px;
+		margin-top: 20px;
+
+		@media (min-width: $tMin) {
+			margin-top: 30px;
+		}
 
 		@media (min-width: $dMin) {
 			display: none;
@@ -11,7 +17,7 @@
 	}
 
 	&__banner-top {
-		width: calc(100% - 10px);
+		width: 100%;
 		border-radius: 5px;
 		overflow: hidden;
 
@@ -159,10 +165,10 @@
 	&__tablet {
 		display: flex;
 		flex-direction: column;
+		order: -1;
 
 		@media (min-width: $tMin) {
 			flex-direction: row;
-			order: -1;
 		}
 
 		@media (min-width: $dMin) {
