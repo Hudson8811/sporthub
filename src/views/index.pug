@@ -540,24 +540,284 @@ block main
 								h3.hp-news-item-title Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад
 								.hp-news-item-excerpt В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...
 
-					.news__banner
-						picture
-							source(srcset='./img/news/banner-3.jpg', media='(min-width: 1024px)')
-							img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
 
-				.hp-default-layout__sidebar.news__right-side
-					.news__banner
+
+
+					.hp-news-top.hp-news-top--articles
+						h2.hp-h2.hp-h2--hp-news Статьи
+						a.hp-news-top-link-all(href="")
+							span.dom Все статьи
+							span.ddt Смотреть все статьи
+					.hp-news-tab-controls-wrap.hp-news-tab-controls-wrap--articles
+						.dom.hp-news-tab-controls-mobile-acc
+							.hp-news-tab-control
+								svg.svg-def-color-others
+									use(xlink:href='./svg/sprite.svg#sport--all'  )
+								span  Все виды
+						.hp-news-tab-controls(data-tabs-wrap-target="#tabs-wrap-2")
+							//
+								.svg-def-color-football
+								.svg-def-color-tennis
+								.svg-def-color-hockey
+								.svg-def-color-volleyball
+								.svg-def-color-basketball
+								.svg-def-color-others
+								Футбол: sprite.svg#sport--fb
+								Баскетбол sprite.svg#sport--bb
+								Хоккей sprite.svg#sport--hk
+								Теннис sprite.svg#sport--te
+								Волейбол sprite.svg#sport--vb
+								Другие sprite.svg#sport--other
+
+
+							.hp-news-tab-control.hp-news-tab-control--active
+								svg.svg-def-color-others
+									use(xlink:href='./svg/sprite.svg#sport--all'  )
+								span  Все виды
+							.hp-news-tab-control
+								svg.svg-def-color-football
+									use(xlink:href='./svg/sprite.svg#sport--fb'  )
+								span  Футбол
+							.hp-news-tab-control
+								svg.svg-def-color-tennis
+									use(xlink:href='./svg/sprite.svg#sport--te'  )
+								span  Теннис
+							.hp-news-tab-control
+								svg.svg-def-color-hockey
+									use(xlink:href='./svg/sprite.svg#sport--hk'  )
+								span  Хоккей
+							.hp-news-tab-control
+								svg.svg-def-color-basketball
+									use(xlink:href='./svg/sprite.svg#sport--bb'  )
+								span  Баскетбол
+						a.hp-news-tab-controls-more(href="") Еще
+					.hp-news-tabs.hp-news-tabs--articles#tabs-wrap-2
+						.hp-news-tab.hp-news-tab--active
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #009A06;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--fb'  )
+										span Футбол
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Жеребьевка Лиги чемпионов: как это было
+								.hp-news-item-excerpt В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E8B500;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--te'  )
+										span Теннис
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Цуренко объяснила отказ выходить на матч в Монтеррее
+								.hp-news-item-excerpt Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #1D88B6;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--hk'  )
+										span Хоккей
+									.hp-news-item-date 13.03.2020, 11:30
+								h3.hp-news-item-title Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным
+								.hp-news-item-excerpt В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E57E25;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--bb'  )
+										span Баскетбол
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад
+								.hp-news-item-excerpt В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...
+						.hp-news-tab
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #009A06;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--fb'  )
+										span Футбол
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title 2Жеребьевка Лиги чемпионов: как это было
+								.hp-news-item-excerpt В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E8B500;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--te'  )
+										span Теннис
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Цуренко объяснила отказ выходить на матч в Монтеррее
+								.hp-news-item-excerpt Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #1D88B6;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--hk'  )
+										span Хоккей
+									.hp-news-item-date 13.03.2020, 11:30
+								h3.hp-news-item-title Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным
+								.hp-news-item-excerpt В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E57E25;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--bb'  )
+										span Баскетбол
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад
+								.hp-news-item-excerpt В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...
+						.hp-news-tab
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #009A06;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--fb'  )
+										span Футбол
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title 3Жеребьевка Лиги чемпионов: как это было
+								.hp-news-item-excerpt В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E8B500;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--te'  )
+										span Теннис
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Цуренко объяснила отказ выходить на матч в Монтеррее
+								.hp-news-item-excerpt Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #1D88B6;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--hk'  )
+										span Хоккей
+									.hp-news-item-date 13.03.2020, 11:30
+								h3.hp-news-item-title Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным
+								.hp-news-item-excerpt В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E57E25;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--bb'  )
+										span Баскетбол
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад
+								.hp-news-item-excerpt В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...
+						.hp-news-tab
+							a.hp-news-item(href="")
+								.hp-news-item-top-wrap
+									.hp-news-item-top
+										.category-label.category-label--hp-news-item-top(style="background: #009A06;")
+											svg
+												use(xlink:href='./svg/sprite.svg#sport--fb'  )
+											span Футбол
+										.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title 4Жеребьевка Лиги чемпионов: как это было
+								.hp-news-item-excerpt В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E8B500;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--te'  )
+										span Теннис
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Цуренко объяснила отказ выходить на матч в Монтеррее
+								.hp-news-item-excerpt Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top-wrap
+									.hp-news-item-top
+										.category-label.category-label--hp-news-item-top(style="background: #1D88B6;")
+											svg
+												use(xlink:href='./svg/sprite.svg#sport--hk'  )
+											span Хоккей
+										.hp-news-item-date 13.03.2020, 11:30
+								h3.hp-news-item-title Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным
+								.hp-news-item-excerpt В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top-wrap
+									.hp-news-item-top
+										.category-label.category-label--hp-news-item-top(style="background: #E57E25;")
+											svg
+												use(xlink:href='./svg/sprite.svg#sport--bb'  )
+											span Баскетбол
+										.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад
+								.hp-news-item-excerpt В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...
+						.hp-news-tab
+							a.hp-news-item(href="")
+								.hp-news-item-top-wrap
+									.hp-news-item-top
+										.category-label.category-label--hp-news-item-top(style="background: #009A06;")
+											svg
+												use(xlink:href='./svg/sprite.svg#sport--fb'  )
+											span Футбол
+										.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title 5Жеребьевка Лиги чемпионов: как это было
+								.hp-news-item-excerpt В пятницу, 13 апреля, в штаб-квартире УЕФА в Ньоне состоится жеребьевка 1/2 финала Лиги чемпионов. Начало церемонии – в 14:00 по киевскому времени. Онлайн трансляция будет доступна на iSport.ua в этой статье. Жеребьевка будет полностью открытая, сеяных и несеяных команд нет...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top
+									.category-label.category-label--hp-news-item-top(style="background: #E8B500;")
+										svg
+											use(xlink:href='./svg/sprite.svg#sport--te'  )
+										span Теннис
+									.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Цуренко объяснила отказ выходить на матч в Монтеррее
+								.hp-news-item-excerpt Украинская теннисистка Леся Цуренко объяснила, почему не вышла на матч второго круга турнира в Монтеррее. По словам спортсменки, выступить ей помешала травма. Цуренко поблагодарила за гостеприимство организаторам турнира. "Очень расстроена, что не смогла сыграть сегодня из-за травмы. Это невероятный турнир с замечательными...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top-wrap
+									.hp-news-item-top
+										.category-label.category-label--hp-news-item-top(style="background: #1D88B6;")
+											svg
+												use(xlink:href='./svg/sprite.svg#sport--hk'  )
+											span Хоккей
+										.hp-news-item-date 13.03.2020, 11:30
+								h3.hp-news-item-title Пике посетил матч НХЛ, по окончании которого сделал снимок с Овечкиным
+								.hp-news-item-excerpt В испанской Примере наступила рождественская паузу, а футболисты отправились в долгожданный отпуск. Защитник каталонской Барселоны Жерар Пике вместе с семьей решил провести его в США, а именно в Нью-Йорке. Спортсмен побывал на матче НХЛ, в котором Рейнджерс принимал Вашингтон. После игры он не упустил возможности...
+
+							a.hp-news-item(href="")
+								.hp-news-item-top-wrap
+									.hp-news-item-top
+										.category-label.category-label--hp-news-item-top(style="background: #E57E25;")
+											svg
+												use(xlink:href='./svg/sprite.svg#sport--bb'  )
+											span Баскетбол
+										.hp-news-item-date 15.03.2020, 14:30
+								h3.hp-news-item-title Биография баскетбольного тренера Александра Гомельского, родившегося 90 лет назад
+								.hp-news-item-excerpt В 1945 году поступил в Высшую школу тренеров при институте физической культуры, спорта и здоровья им. П. Ф. Лесгафта в Ленинграде (ныне Санкт-Петербург), с 1949 по 1952 год учился в Военном институте физкультуры, по окончании которого получил специальность «тренер-преподаватель по спортивным играм». Во время учебы...
+
+
+
+					a.news__banner.news__banner--bottom-desktop-tablet(href="")
+						img(src="img/news/banner-big.jpg", alt="")
+
+				.hp-default-layout__sidebar
+					a.news__banner.news__banner--only-desktop(href="")
 						picture
 							source(srcset='./img/news/banner-1.jpg', media='(min-width: 1024px)')
 							source(srcset='./img/news/banner-1-tab.jpg', media='(min-width: 768px)')
 							img(src='./img/news/banner-1-mobile.jpg', alt= 'banner-1')
-					.news__banner
+					a.news__banner.news__banner--only-desktop(href="")
 						picture
 							source(srcset='./img/news/banner-2.jpg', media='(min-width: 1024px)')
 							source(srcset='./img/news/banner-2-tab.jpg', media='(min-width: 768px)')
 							img(src='./img/news/banner-2-mobile.jpg', alt= 'banner-2')
-					.news__tablet
-						.news-choise
+
+					.news-choise.news-choise--default-layout
+						.news-choise-content
 							.news-choise__title Выбор редакции
 							.news-choise__btns
 								.news-choise__btn.news-choise__btn--active Новости
@@ -625,8 +885,20 @@ block main
 								a.news-choise__link(href='#', target='_blank') Смотреть все новости
 									svg
 										use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
+					// одному из сделующих баннеров приписываем класс .news__banner-at-display-tablet он отобразится на планшетах справа от блока выбор редакции
+					a.news__banner.news__banner--after-tabs.news__banner-at-display-tablet(href="")
+						picture
+							source(srcset='./img/news/banner-3.jpg', media='(min-width: 1024px)')
+							img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
 
-						.news__banner
-							picture
-								source(srcset='./img/news/banner-3.jpg', media='(min-width: 1024px)')
-								img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
+					a.news__banner.news__banner--after-tabs(href="")
+						img(src="img/homepage/4_banner.jpg", alt="")
+
+					a.news__banner.news__banner--after-tabs(href="")
+						img(src="img/homepage/5_banner.jpg", alt="")
+
+			.news__banners--bottom-only-mobile
+				a.news__banner.news__banner--bottom-only-mobile(href="")
+					img(src="img/news/banner-1-top.jpg", alt="")
+				a.news__banner.news__banner--bottom-only-mobile(href="")
+					img(src="img/news/banner-big.jpg", alt="")

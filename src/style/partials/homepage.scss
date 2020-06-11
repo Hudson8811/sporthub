@@ -292,10 +292,12 @@
 
     &__sidebar {
         min-width: 289px;
+        max-width: 289px;
     }
 
     &--hp-margins {
         margin-top: 50px;
+        margin-bottom: 76px;
     }
 }
 
@@ -704,4 +706,18 @@
     font-weight: 500;
     font-style: normal;
     line-height: 24px;
+}
+.hp-news-top--articles{
+    margin-top: 99px;
+}
+.news__banner{
+    display: block;
+}
+
+.news__banner--bottom-desktop-tablet{
+    margin-top: 50px;
+}
+.news__banner img{
+    object-position: center center;
+    display: block;
 }
