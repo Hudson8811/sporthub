@@ -1,0 +1,19 @@
+
+@media screen and (max-width:1023px){
+    .news__banners-top.news__banners-top--searching{
+        margin-bottom: 28px;
+    }
+}
+@media screen and (max-width:767px){
+    .search-results-heading {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 51px;
+    }
+
+    .hp-news-item-post-type{
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
