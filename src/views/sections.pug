@@ -1,0 +1,377 @@
+extends layouts/default.pug
+
+block vars
+
+block main
+	mixin sections()
+		section.sections
+			.container
+				h2.hp-h2 Список разделов новостей по всем видам спорта
+				.hp-default-layout.hp-default-layout--hp-margins
+					.hp-default-layout__main
+						.lastest-events-block
+							.lastest-events-item
+								.category-label
+									//
+										Футбол: sprite.svg#sport--fb
+										Баскетбол sprite.svg#sport--bb
+										Хоккей sprite.svg#sport--hk
+										Теннис sprite.svg#sport--te
+										Волейбол sprite.svg#sport--vb
+										Другие sprite.svg#sport--other
+									svg(style='fill: #009A06;stroke: #009A06;')
+										use(xlink:href='./svg/sprite.svg#sport--fb'  )
+									span Футбол
+								.lastest-events-content
+									.lastest-events-main
+										a.main-last-event(href="")
+											.main-last-event-card(style="background-image: url(img/detail-news/detail-news.jpg);")
+												.mle-card-content
+													.mle-card-top
+
+
+
+													.mle-card-bottom
+														.mle-card-bottom__item.mle-card-bottom__item--date
+															span 15.03.2020, 14:30
+														.mle-card-bottom__item.mle-card-bottom__item--views
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--views')
+															span 585
+														.mle-card-bottom__item.mle-card-bottom__item--comments
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--comment')
+															span 289
+											h3.mle-title Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+											.mle-excerpt Жеребьевка финального этапа ЧМ-2018 по футболу, Москва, 1 декабря. Сборная Уругвая по футболу стала соперником команды России по группе А на чемпионате мира 2018 года
+
+
+
+
+									.lastest-events-other
+										.lastest-events-other-row
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+								.news__more Смотреть еще
+							.lastest-events-item
+								.category-label
+									//
+										Футбол: sprite.svg#sport--fb
+										Баскетбол sprite.svg#sport--bb
+										Хоккей sprite.svg#sport--hk
+										Теннис sprite.svg#sport--te
+										Волейбол sprite.svg#sport--vb
+										Другие sprite.svg#sport--other
+									svg(style='fill: #E8B500; stroke: #E8B500;')
+										use(xlink:href='./svg/sprite.svg#sport--te'  )
+									span Теннис
+								.lastest-events-content
+									.lastest-events-main
+										a.main-last-event(href="")
+											.main-last-event-card(style="background-image: url(img/detail-news/detail-news.jpg);")
+												.mle-card-content
+													.mle-card-top
+
+
+
+													.mle-card-bottom
+														.mle-card-bottom__item.mle-card-bottom__item--date
+															span 15.03.2020, 14:30
+														.mle-card-bottom__item.mle-card-bottom__item--views
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--views')
+															span 585
+														.mle-card-bottom__item.mle-card-bottom__item--comments
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--comment')
+															span 289
+											h3.mle-title Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+											.mle-excerpt Жеребьевка финального этапа ЧМ-2018 по футболу, Москва, 1 декабря. Сборная Уругвая по футболу стала соперником команды России по группе А на чемпионате мира 2018 года
+
+
+
+
+									.lastest-events-other
+										.lastest-events-other-row
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+								.news__more Смотреть еще
+							.lastest-events-item
+								.category-label
+									//
+										Футбол: sprite.svg#sport--fb
+										Баскетбол sprite.svg#sport--bb
+										Хоккей sprite.svg#sport--hk
+										Теннис sprite.svg#sport--te
+										Волейбол sprite.svg#sport--vb
+										Другие sprite.svg#sport--other
+									svg(style='fill: #1D88B6; stroke: #1D88B6;')
+										use(xlink:href='./svg/sprite.svg#sport--hk'  )
+									span Хоккей
+								.lastest-events-content
+									.lastest-events-main
+										a.main-last-event(href="")
+											.main-last-event-card(style="background-image: url(img/detail-news/detail-news.jpg);")
+												.mle-card-content
+													.mle-card-top
+
+
+
+													.mle-card-bottom
+														.mle-card-bottom__item.mle-card-bottom__item--date
+															span 15.03.2020, 14:30
+														.mle-card-bottom__item.mle-card-bottom__item--views
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--views')
+															span 585
+														.mle-card-bottom__item.mle-card-bottom__item--comments
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--comment')
+															span 289
+											h3.mle-title Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+											.mle-excerpt Жеребьевка финального этапа ЧМ-2018 по футболу, Москва, 1 декабря. Сборная Уругвая по футболу стала соперником команды России по группе А на чемпионате мира 2018 года
+
+
+
+
+									.lastest-events-other
+										.lastest-events-other-row
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+								.news__more Смотреть еще
+							.lastest-events-item
+								.category-label
+									//
+										Футбол: sprite.svg#sport--fb
+										Баскетбол sprite.svg#sport--bb
+										Хоккей sprite.svg#sport--hk
+										Теннис sprite.svg#sport--te
+										Волейбол sprite.svg#sport--vb
+										Другие sprite.svg#sport--other
+									svg(style='fill: #E57E25; stroke: #E57E25;')
+										use(xlink:href='./svg/sprite.svg#sport--bb'  )
+									span Баскетбол
+								.lastest-events-content
+									.lastest-events-main
+										a.main-last-event(href="")
+											.main-last-event-card(style="background-image: url(img/detail-news/detail-news.jpg);")
+												.mle-card-content
+													.mle-card-top
+
+
+
+													.mle-card-bottom
+														.mle-card-bottom__item.mle-card-bottom__item--date
+															span 15.03.2020, 14:30
+														.mle-card-bottom__item.mle-card-bottom__item--views
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--views')
+															span 585
+														.mle-card-bottom__item.mle-card-bottom__item--comments
+															svg
+																use(xlink:href='./svg/sprite.svg#no-color--comment')
+															span 289
+											h3.mle-title Сборная Уругвая по футболу, которая стала соперником команды России на ЧМ-2018
+											.mle-excerpt Жеребьевка финального этапа ЧМ-2018 по футболу, Москва, 1 декабря. Сборная Уругвая по футболу стала соперником команды России по группе А на чемпионате мира 2018 года
+
+
+
+
+									.lastest-events-other
+										.lastest-events-other-row
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-1.jpg)")
+												.leo-item-content
+													.leo-item__date 15.03.2020
+													.leo-item__title Михайлюк набрал 1000 очков за Канзас
+											a.lastest-events-other-item(href="" style="background-image:url(img/homepage/other-events-2.jpg)")
+												.leo-item-content
+													.leo-item__date 12.03.2020
+													.leo-item__title Андерлехт – ПСЖ 0:4 видео голов и обзор
+								.news__more Смотреть еще
+						.news__banner
+							picture
+								source(srcset='./img/news/banner-big.jpg', media='(min-width: 1024px)')
+								img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
+
+
+					.hp-default-layout__sidebar.news__right-side
+						.news__banner
+							picture
+								source(srcset='./img/news/banner-1.jpg', media='(min-width: 1024px)')
+								source(srcset='./img/news/banner-1-tab.jpg', media='(min-width: 768px)')
+								img(src='./img/news/banner-1-mobile.jpg', alt= 'banner-1')
+						.news__banner
+							picture
+								source(srcset='./img/news/banner-2.jpg', media='(min-width: 1024px)')
+								source(srcset='./img/news/banner-2-tab.jpg', media='(min-width: 768px)')
+								img(src='./img/news/banner-2-mobile.jpg', alt= 'banner-2')
+						.news__tablet
+							.news-choise
+								.news-choise__title Выбор редакции
+								.news-choise__btns
+									.news-choise__btn.news-choise__btn--active Новости
+									.news-choise__btn Статьи
+
+								.news-choise__items.news-choise__items--active
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-1.png', alt= 'choise-1')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#', target='_blank') Михайлюк набрал 1000 очков за Канзас
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-2.png', alt= 'choise-2')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#', target='_blank') Гассиев — Влодарчик: видео боя
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-3.png', alt= 'choise-3')
+										.news-choise__info
+											.news-choise__date 12.03.2020
+											a.news-choise__desc(href='#', target='_blank') Андерлехт – ПСЖ 0:4 видео голов и обзор
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-4.png', alt= 'choise-4')
+										.news-choise__info
+											.news-choise__date 11.03.2020
+											a.news-choise__desc(href='#', target='_blank') НБА: Хьюстон обыграл Шарлотт
+
+								.news-choise__items
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-1.png', alt= 'choise-1')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#', target='_blank') Михайлюк набрал 1000 очков за Канзас123
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-2.png', alt= 'choise-2')
+										.news-choise__info
+											.news-choise__date 15.03.2020
+											a.news-choise__desc(href='#', target='_blank') Гассиев — Влодарчик: видео боя456
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-3.png', alt= 'choise-3')
+										.news-choise__info
+											.news-choise__date 12.03.2020
+											a.news-choise__desc(href='#', target='_blank') Андерлехт – ПСЖ 0:4 видео голов и обзор789
+
+									.news-choise__item
+										.news-choise__preview
+											img(src='img/news/choise-4.png', alt= 'choise-4')
+										.news-choise__info
+											.news-choise__date 11.03.2020
+											a.news-choise__desc(href='#', target='_blank') НБА: Хьюстон обыграл Шарлотт987
+
+								.news-choise__more
+									a.news-choise__link(href='#', target='_blank') Смотреть все новости
+										svg
+											use(xlink:href='./svg/sprite.svg#news--article-switcher-arrow-rb')
+
+							.news__banner
+								picture
+									source(srcset='./img/news/banner-3.jpg', media='(min-width: 1024px)')
+									img(src='./img/news/banner-3-tab.jpg', alt= 'banner-3')
+						.news__banner.news__banner--desktop
+							img(src='./img/news/banner-4.jpg', alt= 'banner-4')
+						.news__banner.news__banner--desktop
+							img(src='./img/news/banner-5.jpg', alt= 'banner-5')
+
+	+sections()

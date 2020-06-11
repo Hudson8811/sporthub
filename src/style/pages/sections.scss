@@ -1,0 +1,60 @@
+.sections {
+	.category-label {
+		color: $black-33;
+		padding: 0;
+		font-size: 17px;
+		line-height: 21px;
+		font-weight: bold;
+		margin-bottom: 30px;
+
+		@media (min-width: $tMin) {
+			font-size: 25px;
+			line-height: 30px;
+			margin-bottom: 50px;
+		}
+
+		svg {
+			width: 18px;
+			height: 18px;
+		}
+	}
+
+	.lastest-events-block {
+		display: block;
+	}
+
+	.lastest-events-item {
+		display: block;
+
+		&:not(:first-child) {
+			margin-top: 50px;
+
+			@media (min-width: $tMin) {
+				flex-direction: row;
+			}
+		}
+	}
+
+	.lastest-events-content {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: $tMin) {
+			flex-direction: row;
+		}
+	}
+
+	.hp-default-layout__main {
+		.news__banner {
+			margin-top: 50px;
+		}
+	}
+
+	.news {
+		&__right-side {
+			@media (min-width: $dMin) {
+				margin-top: 80px;
+			}
+		}
+	}
+}
